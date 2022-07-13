@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+
+    <!--
+        Made by CyberMinter.
+
+        This Webpage is under the GNU GENERAL PUBLIC LICENSE ( https://www.gnu.org/licenses/quick-guide-gplv3.html )
+
+    -->
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Bright coin is the smart choise for DeFi ">
+        <meta name="author" content="cyberminter">
+      
+        <title>Bright Coin | Making Finance Bright</title>
+
+        <link rel="icon" href="https://raw.githubusercontent.com/cyberminter/jellybeanswap-branding/main/coins/png/brightCoin.png" />
+    </head>
+    <body>
+
+
+        <div id="headDiv">
+
+            <img id="blubImg" alt="bright coin logo" src="https://raw.githubusercontent.com/cyberminter/jellybeanswap-branding/main/coins/svg/brightCoinWithLight.svg" onclick="turnOffLight()"  width="225px" />
+      
+
+            <h2 >Making Finance Bright</h2>
+
+
+           <a href="https://jellybeanswap.netlify.app/#/swap/0x3d39756b1FF9C68a4E552aE5722cFAF4b8BdB543"><button>Trade</button></a> 
+        </div>
+
+        <footer>
+            <a href="https://blockscout.com/etc/mainnet/address/0x3d39756b1FF9C68a4E552aE5722cFAF4b8BdB543/contracts#address-tabs"><h6>View contract</h6></a>
+        </footer>
+        <style>
+            @charset "UTF-8";
+
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            body {
+
+                background: rgb(2,0,36);
+                background-color: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(22,22,47,1) 35%, rgba(30,30,32,1) 100%);
+
+            }
+
+          
+
+            h2,  a {
+                color: #F9F703;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                font-family: 'Rubik', sans-serif;
+                font-weight: bold;
+           
+            }
+
+
+            #headDiv {
+                text-align: center;
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -20%);
+
+
+            }
+
+            button {
+                width: 100%;
+                cursor: pointer;
+                height: 40px;
+                border-radius: 11px;
+                background-color: #6A0606;
+                font-family: 'Rubik', sans-serif;
+                font-size: 19px;
+                color: #F9F703;
+
+                border: .1px solid;
+                padding: 10px;
+                box-shadow: .1px .1px;
+
+            }
+            button:hover {
+                transform: scale(1.2);
+                
+            }
+
+            img {
+                cursor: pointer;
+
+            }
+            img:hover {
+                transform: scale(1.1);
+                
+            }
+
+            footer {
+                position: absolute;
+                top: 99%;
+                left: 50%;
+                transform: translate(-50%, -99%);
+            }
+
+
+          
+
+            @media only screen and (min-width: 600px) {
+
+                    h2 {
+
+                        font-size: 34px;
+                    }
+                    button {
+                        width: 80%;
+                    }
+            }
+
+
+
+        </style>
+
+        <script>
+
+            let turnedOn = true;
+
+            const turnOffLight = () => {
+                if (turnedOn == true) {
+
+                    turnedOn = false;
+                    document.querySelector("#blubImg").src = "https://raw.githubusercontent.com/cyberminter/jellybeanswap-branding/main/coins/svg/brightCoinTurnedOff.svg";
+
+                } else {
+                    document.querySelector("#blubImg").src = "https://raw.githubusercontent.com/cyberminter/jellybeanswap-branding/main/coins/svg/brightCoinWithLight.svg";
+                    turnedOn = true;
+                }
+            }
+
+        </script>
+
+    </body>
+
+</html>
